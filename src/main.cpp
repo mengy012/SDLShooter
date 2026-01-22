@@ -5,10 +5,13 @@
 #include <SDL_ttf.h>
 #include "Game.h"
 
-int main(int, char**) {
-    Game& game = Game::getInstance();
+int main(int, char **)
+{
+    Game &game = Game::getInstance();
     game.init();
     game.run();
-    
+
+    int b{0};
+    b = 99;
     return 0;
 }

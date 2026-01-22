@@ -49,3 +49,7 @@ build_*/
 
 # msc
 assets/save.dat
+
+# windows
+*.ilk
+*.pdb

@@ -2,14 +2,16 @@
 #define OBJECT_H
 #include <SDL.h>
 
-enum class ItemType{
+enum class ItemType
+{
     Life,
     Shield,
     Time
 };
 
-struct Player{
-    SDL_Texture* texture = nullptr;
+struct Player
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     int width = 0;
     int height = 0;
@@ -20,8 +22,9 @@ struct Player{
     Uint32 lastShootTime = 0;
 };
 
-struct Enemy{
-    SDL_Texture* texture = nullptr;
+struct Enemy
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     int width = 0;
     int height = 0;
@@ -31,8 +34,9 @@ struct Enemy{
     Uint32 lastShootTime = 0;
 };
 
-struct ProjectilePlayer{
-    SDL_Texture* texture = nullptr;
+struct ProjectilePlayer
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     int width = 0;
     int height = 0;
@@ -40,8 +44,9 @@ struct ProjectilePlayer{
     int damage = 1;
 };
 
-struct ProjectileEnemy{
-    SDL_Texture* texture = nullptr;
+struct ProjectileEnemy
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     SDL_FPoint direction = {0, 0};
     int width = 0;
@@ -50,8 +55,9 @@ struct ProjectileEnemy{
     int damage = 1;
 };
 
-struct Explosion{
-    SDL_Texture* texture = nullptr;
+struct Explosion
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     int width = 0;
     int height = 0;
@@ -61,8 +67,9 @@ struct Explosion{
     Uint32 FPS = 10;
 };
 
-struct Item{
-    SDL_Texture* texture = nullptr;
+struct Item
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     SDL_FPoint direction = {0, 0};
     int width = 0;
@@ -72,8 +79,9 @@ struct Item{
     ItemType type = ItemType::Life;
 };
 
-struct Background{
-    SDL_Texture* texture = nullptr;
+struct Background
+{
+    SDL_Texture *texture = nullptr;
     SDL_FPoint position = {0, 0};
     float offset = 0;
     int width = 0;
